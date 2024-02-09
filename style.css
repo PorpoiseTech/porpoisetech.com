@@ -1,0 +1,64 @@
+body {
+  background: #eaeee8;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .logo {
+    width: 80px;
+    margin-left: -94px;
+  }
+}
+
+header,
+main {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Bariol Serif";
+  src: url("bariol_serif_regular-webfont.woff2") format("woff2");
+}
+
+h1 {
+  font-family: "Bariol Serif";
+  font-weight: 500;
+  font-size: 56px;
+}
+
+a {
+  color: #2222ff;
+  font-weight: 500;
+  text-decoration: none;
+
+  @supports (color: oklch(0 0 0)) {
+    color: oklch(47.5% 0.308 267.35);
+  }
+}
+
+p {
+  max-width: 720px;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+li {
+  margin-bottom: 4px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  .icon {
+    height: 24px;
+  }
+}
